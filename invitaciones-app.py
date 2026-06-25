@@ -47,7 +47,7 @@ if st.session_state.datos is not None:
                 telefono = '+' + telefono
                 
             # TU MENSAJE DE VIAJE
-            mensaje = f"¡Hola {nombre}! nos vamos de viaje el {fecha} a {donde}!!!!"
+            mensaje = f"¡Hola {nombre}! nos vamos de viaje el {fecha} a las {donde}!!!!"
             
             mensaje_url = urllib.parse.quote(mensaje)
             link = f"https://web.whatsapp.com/send?phone={telefono}&text={mensaje_url}"
